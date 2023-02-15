@@ -11,9 +11,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/dibros?allowPublicKeyRetrieval=true&sslMode=DISABLED&useTimezone=true&serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://root:lsVNyOr52vfWtO6SFPjE@containers-us-west-200.railway.app:5645/railway
 
 eureka:
   instance:
