@@ -22,7 +22,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: https://dibros-store-discovery.up.railway.app/eureka/
 
 jwt:
   config:
