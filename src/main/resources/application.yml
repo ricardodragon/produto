@@ -14,13 +14,11 @@ spring:
     url: jdbc:mysql://root:lsVNyOr52vfWtO6SFPjE@containers-us-west-200.railway.app:5645/railway
 
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://dibros-store-discovery.up.railway.app/eureka/
+      defaultZone: https://dibros-discovery.up.railway.app/eureka/
 
 jwt:
   config:
