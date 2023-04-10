@@ -1,5 +1,5 @@
 server:
-  port: 8086
+  port: 5001
 spring:
   application:
     name: produto
@@ -11,14 +11,16 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
   datasource:
-    url: jdbc:mysql://root:lsVNyOr52vfWtO6SFPjE@containers-us-west-200.railway.app:5645/railway
+    url: jdbc:mysql://127.0.0.1:3306/dibros?allowPublicKeyRetrieval=true&sslMode=DISABLED&useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://dibros-discovery.up.railway.app/eureka/
+      defaultZone: https://dibros-eureka.up.railway.app/eureka/
 
 jwt:
   config:

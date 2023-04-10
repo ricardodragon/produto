@@ -1,9 +1,7 @@
 package com.dibros.produto.mapper;
 
 import com.dibros.produto.dto.ProdutoDTO;
-import com.dibros.produto.dto.ProdutoTituloDTO;
 import com.dibros.produto.model.Produto;
-import com.dibros.produto.model.ProdutoTitulo;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
@@ -21,8 +19,8 @@ public interface ProdutoMapper {
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     void toProdutoMerge(ProdutoDTO produtoDTO, @MappingTarget Produto produto);
     Iterable<ProdutoDTO> toListProdutoDTO(Iterable<Produto> produtos);
-    ProdutoTitulo toProdutoTitulo(ProdutoTituloDTO produtoTituloDTO);
-    ProdutoTituloDTO toProdutoTituloDTO(ProdutoTitulo produtoTitulo);
+//    ProdutoTitulo toProdutoTitulo(ProdutoTituloDTO produtoTituloDTO);
+//    ProdutoTituloDTO toProdutoTituloDTO(ProdutoTitulo produtoTitulo);
 }
 //@Mapping(source = "produtoTitulo", target = "produtoTituloDTO")
 //@Mapping(source = "produtoCaracteristicas", target = "produtoCaracteristicasDTO")
